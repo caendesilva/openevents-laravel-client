@@ -1,8 +1,12 @@
 <?php
 
 /*
- * You can place your custom package configuration in here.
+ * Configure your OpenEvents settings here.
  */
 return [
+	// Your API token 
+	'token' => env('OPENEVENTS_TOKEN'),
 
+    // Your API endpoint
+    'host' => env('OPENEVENTS_HOST'),
 ];
