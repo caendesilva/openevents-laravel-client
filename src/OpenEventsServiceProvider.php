@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenEvents\LaravelClient;
+namespace OpenEvents\OpenEvents;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelClientServiceProvider extends ServiceProvider
+class OpenEventsServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -14,29 +14,29 @@ class LaravelClientServiceProvider extends ServiceProvider
         /*
          * Optional methods to load your package assets
          */
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'laravelclient');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'laravelclient');
+        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'openevents');
+        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'openevents');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('laravelclient.php'),
+                __DIR__.'/../config/config.php' => config_path('openevents.php'),
             ], 'config');
 
             // Publishing the views.
             /*$this->publishes([
-                __DIR__.'/../resources/views' => resource_path('views/vendor/laravelclient'),
+                __DIR__.'/../resources/views' => resource_path('views/vendor/openevents'),
             ], 'views');*/
 
             // Publishing assets.
             /*$this->publishes([
-                __DIR__.'/../resources/assets' => public_path('vendor/laravelclient'),
+                __DIR__.'/../resources/assets' => public_path('vendor/openevents'),
             ], 'assets');*/
 
             // Publishing the translation files.
             /*$this->publishes([
-                __DIR__.'/../resources/lang' => resource_path('lang/vendor/laravelclient'),
+                __DIR__.'/../resources/lang' => resource_path('lang/vendor/openevents'),
             ], 'lang');*/
 
             // Registering package commands.
@@ -50,11 +50,11 @@ class LaravelClientServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravelclient');
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'openevents');
 
         // Register the main class to use with the facade
-        $this->app->singleton('laravelclient', function () {
-            return new LaravelClient;
+        $this->app->singleton('openevents', function () {
+            return new OpenEvents;
         });
     }
 }

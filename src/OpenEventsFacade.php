@@ -1,13 +1,13 @@
 <?php
 
-namespace OpenEvents\LaravelClient;
+namespace OpenEvents\OpenEvents;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \OpenEvents\LaravelClient\Skeleton\SkeletonClass
+ * @see \OpenEvents\OpenEvents\Skeleton\SkeletonClass
  */
-class LaravelClientFacade extends Facade
+class OpenEventsFacade extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -16,6 +16,6 @@ class LaravelClientFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'laravelclient';
+        return 'openevents';
     }
 }
