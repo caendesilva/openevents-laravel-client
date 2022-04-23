@@ -19,7 +19,7 @@ class Client
                 'Authorization' => 'Bearer ' . config('openevents.token'),
             ])->timeout(config('openevents.timeout', 3))->post(config('openevents.endpoint'), $event->toArray());
 
-            if ($response->status() !== 200) {
+            if ($response->status() >= 400) {
                 throw new \Exception('OpenEvents API returned an error: ' . $response->body());
             }
         } catch (\Exception $exception) {
