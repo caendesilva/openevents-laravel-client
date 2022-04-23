@@ -1,11 +1,11 @@
 {
-    "name": "openevents/laravelclient",
+    "name": "openevents/laravel",
     "description": "Laravel Client for sending Events to the OpenEvents API",
     "keywords": [
         "openevents",
-        "laravelclient"
+        "laravel"
     ],
-    "homepage": "https://github.com/openevents/laravelclient",
+    "homepage": "https://github.com/caendesilva/openevents-laravelclient",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "OpenEvents\\LaravelClient\\": "src"
+            "OpenEvents\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "OpenEvents\\LaravelClient\\Tests\\": "tests"
+            "OpenEvents\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "OpenEvents\\LaravelClient\\LaravelClientServiceProvider"
+                "OpenEvents\\OpenEventsServiceProvider"
             ],
             "aliases": {
-                "LaravelClient": "OpenEvents\\LaravelClient\\LaravelClientFacade"
+                "OpenEvents": "OpenEvents\\OpenEventsFacade"
             }
         }
     }

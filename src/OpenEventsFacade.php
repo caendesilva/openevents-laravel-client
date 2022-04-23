@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenEvents\OpenEvents;
+namespace OpenEvents;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \OpenEvents\OpenEvents\Skeleton\SkeletonClass
+ * @see \OpenEvents\Skeleton\SkeletonClass
  */
 class OpenEventsFacade extends Facade
 {

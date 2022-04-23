@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenEvents\OpenEvents;
+namespace OpenEvents;
 
 use Illuminate\Support\ServiceProvider;
 
