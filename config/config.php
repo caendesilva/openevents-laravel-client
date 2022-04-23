@@ -9,4 +9,7 @@ return [
 
     // Your API endpoint
     'endpoint' => env('OPENEVENTS_ENDPOINT'),
+
+    // Request timeout in seconds
+    'timeout' => 3,
 ];
