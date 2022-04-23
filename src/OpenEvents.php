@@ -2,7 +2,21 @@
 
 namespace OpenEvents;
 
+/**
+ * The OpenEvents Singleton class.
+ */
 class OpenEvents
 {
-    // Build your next great package.
+    /**
+     * @var null|string
+     */
+    protected ?string $environment;
+
+    /**
+     * @return string
+     */
+    public function environment(): string
+    {
+        return $this->environment ?? app()->environment();
+    }
 }
