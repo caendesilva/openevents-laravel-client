@@ -38,17 +38,16 @@ class OpenEvents
 
     /**
      * Get the current environment.
+     * If a parameter is supplied, the environment is set to that value.
+     * @param string|null $environment
      * @return string
      */
-    public function environment(): string
+    public function environment(?string $environment = null): string
     {
+        if ($environment !== null) {
+            $this->environment = $environment;
+        }
         return $this->environment ?? app()->environment();
-    }
-
-    public function setEnvironment(string $environment): static
-    {
-        $this->environment = $environment;
-        return $this;
     }
 
     /**

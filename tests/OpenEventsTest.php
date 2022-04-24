@@ -25,7 +25,7 @@ class OpenEventsTest extends  TestCase
     public function testCanSetEnvironment()
     {
         $openEvents = new OpenEvents();
-        $openEvents->setEnvironment('production');
+        $openEvents->environment('production');
         $this->assertEquals('production', $openEvents->environment());
     }
 
