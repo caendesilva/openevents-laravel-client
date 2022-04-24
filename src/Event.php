@@ -34,6 +34,6 @@ class Event
 
     public static function dispatch(string $event, ?string $data = null): void
     {
-        OpenEvents::dispatch((new static($event, $data)));
+        \OpenEvents::dispatch((new static($event, $data)));
     }
 }
