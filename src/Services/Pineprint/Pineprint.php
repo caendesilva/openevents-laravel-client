@@ -20,7 +20,7 @@ class Pineprint
 
     public function __construct(string $eventName, ?string $modifier = null)
     {
-        $this->event = $event;
+        $this->event = $eventName;
         $this->modifier = $modifier;
 
         $this->value = $this->calculate();
