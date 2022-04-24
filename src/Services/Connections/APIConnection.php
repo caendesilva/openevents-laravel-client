@@ -2,7 +2,7 @@
 
 namespace OpenEvents\LaravelClient\Services\Connections;
 
-use OpenEvents\LaravelClient\Client;
+use OpenEvents\LaravelClient;
 use OpenEvents\LaravelClient\Event;
 
 /**
