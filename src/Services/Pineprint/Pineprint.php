@@ -2,8 +2,6 @@
 
 namespace OpenEvents\LaravelClient\Services\Pineprint;
 
-use OpenEvents\LaravelClient\Event;
-
 /**
  * Create an anonymized "fingerprint" that can be used to
  * group similar events instances without identifying
@@ -11,7 +9,7 @@ use OpenEvents\LaravelClient\Event;
  */
 class Pineprint
 {
-    public Event $event;
+    public string $event;
     // The modifier will support more options through method chaining.
     // For now serialize objects to JSON and/or supply a hash.
     public ?string $modifier;
@@ -20,10 +18,10 @@ class Pineprint
 
     protected string $algorithm = 'sha256';
 
-    public function __construct(Event $event, ?string $modifier = null)
+    public function __construct(string $eventName, ?string $modifier = null)
     {
         $this->event = $event;
-        $this->modifier = $modifier ?? $event->data;
+        $this->modifier = $modifier;
 
         $this->value = $this->calculate();
     }
@@ -60,7 +58,7 @@ class Pineprint
     {
         $value = 0;
 
-        $value += hexdec(substr(hash($this->algorithm, $this->event->event), 0, 8));
+        $value += hexdec(substr(hash($this->algorithm, $this->event), 0, 8));
         $value += hexdec(substr(hash($this->algorithm, $this->modifier), 0, 8));
 
         return  $value;
