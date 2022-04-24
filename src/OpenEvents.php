@@ -3,7 +3,6 @@
 namespace OpenEvents\LaravelClient;
 
 use OpenEvents\LaravelClient\Services\Connections\APIConnection;
-use OpenEvents\LaravelClient\Services\Connections\ConnectionContract as Connection;
 use OpenEvents\LaravelClient\Services\Connections\ConnectionManager;
 
 /**

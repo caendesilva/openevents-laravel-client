@@ -16,7 +16,7 @@ use OpenEvents\LaravelClient\Event;
  * To queue events it's safe to add a boolean column
  * to keep track of which events have been sent.
  */
-class DatabaseConnection implements ConnectionContract
+class DatabaseConnection extends Connection
 {
     protected string $table = 'openevents_events';
 

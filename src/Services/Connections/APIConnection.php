@@ -8,7 +8,7 @@ use OpenEvents\LaravelClient\Event;
 /**
  * Connect to the API. This is the default connection.
  */
-class APIConnection implements ConnectionContract
+class APIConnection extends Connection
 {
     public function handle(Event $event)
     {
