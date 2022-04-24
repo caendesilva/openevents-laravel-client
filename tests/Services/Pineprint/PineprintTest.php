@@ -10,7 +10,7 @@ class PineprintTest extends TestCase
 {
     public function testGetInteger()
     {
-            $pineprint = new Pineprint(new Event('test'));
+            $pineprint = new Pineprint('test');
             $this->assertIsInt($pineprint->getInteger());
             echo $pineprint->getInteger();
     }

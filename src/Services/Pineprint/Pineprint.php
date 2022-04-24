@@ -53,6 +53,11 @@ class Pineprint
      * will not be useful for long term comparisons,
      * but can be used to compare events for the same
      * day or at least since the last update.
+     * 
+     * When converting to a HumanoID a limited set of
+     * fruit related words are used. The intentional
+     * limitation is to limit how identifying the
+     * identifier is.
      */
     protected function calculate(): int
     {
