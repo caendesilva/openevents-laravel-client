@@ -45,6 +45,12 @@ class OpenEvents
         return $this->environment ?? app()->environment();
     }
 
+    public function setEnvironment(string $environment): static
+    {
+        $this->environment = $environment;
+        return $this;
+    }
+
     /**
      * Dispatch an Event through the configured connection.
      * @param Event $event
