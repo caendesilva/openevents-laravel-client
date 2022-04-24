@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenEvents\LaravelClient\Client\Services\Connections;
+namespace OpenEvents\LaravelClient\Services\Connections;
 
 use OpenEvents\LaravelClient\Client;
 use OpenEvents\LaravelClient\Event;
