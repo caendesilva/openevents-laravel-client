@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Http;
 
 /**
  * HTTP Client for the OpenEvents API
+ * @todo Add method to get the response.
  */
 class Client
 {
