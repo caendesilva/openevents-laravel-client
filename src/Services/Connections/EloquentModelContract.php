@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenEvents\Client\Services\Connections;
+namespace OpenEvents\LaravelClient\Services\Connections;
 
-use OpenEvents\Event;
+use OpenEvents\LaravelClient\Event;
 
 interface EloquentModelContract
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenEvents\Client\Services\Connections;
+namespace OpenEvents\LaravelClient\Services\Connections;
 
-use OpenEvents\Client\Services\Connections\ConnectionContract as Connection;
-use OpenEvents\Event;
+use OpenEvents\LaravelClient\Client\Services\Connections\ConnectionContract as Connection;
+use OpenEvents\LaravelClient\Event;
 
 /**
  * Loaded through the OpenEvents Singleton and keeps track of the connection to use.

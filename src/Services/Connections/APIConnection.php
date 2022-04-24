@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenEvents\Client\Services\Connections;
+namespace OpenEvents\LaravelClient\Client\Services\Connections;
 
-use OpenEvents\Client;
-use OpenEvents\Event;
+use OpenEvents\LaravelClient\Client;
+use OpenEvents\LaravelClient\Event;
 
 /**
  * Connect to the API. This is the default connection.

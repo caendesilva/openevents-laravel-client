@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenEvents\Client\Services\Connections;
+namespace OpenEvents\LaravelClient\Client\Services\Connections;
 
-use OpenEvents\Event;
+use OpenEvents\LaravelClient\Event;
 
 /**
  * A connection takes an Event and stores it somewhere.

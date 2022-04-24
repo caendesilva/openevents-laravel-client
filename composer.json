@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "OpenEvents\\": "src"
+            "OpenEvents\\LaravelClient\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "OpenEvents\\Tests\\": "tests"
+            "OpenEvents\\LaravelClient\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,10 +45,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "OpenEvents\\OpenEventsServiceProvider"
+                "OpenEvents\\LaravelClient\\OpenEventsServiceProvider"
             ],
             "aliases": {
-                "OpenEvents": "OpenEvents\\OpenEventsFacade"
+                "OpenEvents": "OpenEvents\\LaravelClient\\OpenEventsFacade"
             }
         }
     }

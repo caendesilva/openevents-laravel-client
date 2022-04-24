@@ -3,7 +3,7 @@
 namespace OpenEvents\Client\Services\Connections;
 
 use Illuminate\Support\Facades\DB;
-use OpenEvents\Event;
+use OpenEvents\LaravelClient\Event;
 
 /**
  * Connect directly to the application database.

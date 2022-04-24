@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenEvents;
+namespace OpenEvents\LaravelClient;
 
-use OpenEvents\Client\Services\Connections\APIConnection;
-use OpenEvents\Client\Services\Connections\ConnectionContract as Connection;
-use OpenEvents\Client\Services\Connections\ConnectionManager;
+use OpenEvents\LaravelClient\Services\Connections\APIConnection;
+use OpenEvents\LaravelClient\Services\Connections\ConnectionContract as Connection;
+use OpenEvents\LaravelClient\Services\Connections\ConnectionManager;
 
 /**
  * The OpenEvents Singleton class.

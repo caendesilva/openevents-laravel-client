@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenEvents;
+namespace OpenEvents\LaravelClient;
 
 use Illuminate\Support\ServiceProvider;
 
