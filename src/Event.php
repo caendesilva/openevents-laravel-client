@@ -24,6 +24,9 @@ class Event
         ];
     }
 
+    /**
+     * @deprecated use OpenEvents::dispatch()
+     */
     public function dispatchEvent(): void
     {
         (new Client)->dispatchRequest($this);
@@ -31,6 +34,6 @@ class Event
 
     public static function dispatch(string $event, ?string $data = null): void
     {
-        (new self($event, $data))->dispatchEvent();
+        OpenEvents::dispatch((new static($event, $data)));
     }
 }
