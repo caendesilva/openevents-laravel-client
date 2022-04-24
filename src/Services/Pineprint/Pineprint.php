@@ -46,7 +46,9 @@ class Pineprint
      * made by the same user.
      *
      * The value can be salted with a secret key if
-     * specified in the config/environment variable.
+     * specified in the config/environment variable
+     * so that the value is not predictable by
+     * outside parties. This will then use hash_hmac.
      *
      * Note that until this algorithm is tested and proven
      * it will be changed countless times and as such
